@@ -4,7 +4,7 @@ def backward_string_by_word(text: str) -> str:
 
 if __name__ == '__main__':
     print("Example:")
-    print(backward_string_by_word('hello   world'))
+    print(backward_string_by_word('hello a  world'))
 
     # These "asserts" are used for self-checking and not for an auto-testing
     assert backward_string_by_word('') == ''
