@@ -3,8 +3,7 @@ def is_ascending(items: Iterable[int]) -> bool:
     # for i in range(len(items)-1):
     #     if items[i] >= items[i+1]:
     #         return False
-    # return True
-    return len(items) < 2 or bool(len( [ items[i] for i in range(len(items)-1) if items[i] < items[i+1] ] ) > 0)
+    return len([i for i in range(len(items)-1) if items[i] < items[i+1] ]) + 1 == len(items) or len(items) == 0
 
 if __name__ == '__main__':
     print("Example:")

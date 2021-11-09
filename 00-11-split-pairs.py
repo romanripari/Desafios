@@ -1,9 +1,5 @@
 def split_pairs(a):
-    b = "".join([a[i]+a[i+1]+"*" for i in range(0,len(a),2) ])
-
-    # your code here
-    return b.split("*")
-
+    return [a[i] + a[i+1] if i < len(a) - 1 else a[i] + "_" for i in range(len(a)) if i %2 == 0]
 
 if __name__ == '__main__':
     print("Example:")
