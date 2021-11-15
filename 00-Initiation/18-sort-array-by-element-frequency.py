@@ -3,8 +3,6 @@ def frequency_sort(items):
     if len(set(items)) == len(items):
         times = items
     else:
-        counts = collections.Counter(items)
-        # times = sorted(items, key=lambda x: (counts[x], x), reverse=True)
         times = [n for n,count in collections.Counter(items).most_common() for i in range(count)]
     return times
 

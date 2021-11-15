@@ -1,5 +1,8 @@
 def is_all_upper(text: str) -> bool:
-    return text == text.upper()
+    texto =""
+    for t in text:
+        texto += t.upper()
+    return texto == text #text == text.upper()
 
 
 if __name__ == '__main__':

@@ -1,4 +1,5 @@
 def split_pairs(a):
+
     return [a[i] + a[i+1] if i < len(a) - 1 else a[i] + "_" for i in range(len(a)) if i %2 == 0]
 
 if __name__ == '__main__':
