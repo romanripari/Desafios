@@ -3,7 +3,12 @@ def i_love_python():
     verb = "love"
     noun = "Python"
     exclamation = "!"
-    return f'{who} {verb} {noun}{exclamation}'
+    try:
+        text = f'{who} {verb} {noun}{exclamation}'
+    except ValueError:
+        raise "I love Python!"
+
+    return text
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
