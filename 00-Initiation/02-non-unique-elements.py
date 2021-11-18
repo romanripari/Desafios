@@ -1,21 +1,7 @@
-#Your optional code here
-#You can import some modules or create additional functions
-
-
 def checkio(data: list) -> list:
     data = [l for l in data if data.count(l)>1]
-    #Your code here
-    #It's main function. Don't remove this function
-    #It's used for auto-testing and must return a result for check.  
 
-    #replace this for solution
     return data
-
-#Some hints
-#You can use list.count(element) method for counting.
-#Create new list with non-unique elements
-#Loop over original list
-
 
 if __name__ == "__main__":
     #These "asserts" using only for self-checking and not necessary for auto-testing

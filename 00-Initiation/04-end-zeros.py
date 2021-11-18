@@ -1,12 +1,3 @@
-# def end_zeros(num: int) -> int:
-#     numero = str(num)
-#     ceros = 0
-#     i = len(numero)-1
-#     while i >= 0 and numero[i] == "0":
-#         ceros +=1
-#         i -=1
-#     return ceros
-
 def end_zeros(num: int, contador = 0) -> int:
     if num == 0: 
         return contador + 1

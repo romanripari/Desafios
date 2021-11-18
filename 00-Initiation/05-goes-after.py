@@ -5,6 +5,7 @@ def goes_after(word: str, first: str, second: str) -> bool:
                 return word[i+1] == second
             if word[i] == second:
                 return False
+                
     return False
 
 if __name__ == '__main__':

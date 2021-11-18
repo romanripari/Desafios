@@ -1,5 +1,3 @@
-#Your code here
-#You can import some modules or create additional functions
 from typing import List
 from pprint import pprint
 

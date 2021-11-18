@@ -6,9 +6,8 @@ def sun_angle(time: str) -> Union[int, str]:
     m = int(time[3:]) 
     if h < 6 or (h > 17 and m > 0):
         return "I don't see the sun!"
-    angulo = (h-6) / 12 * 180 + (m) / 60 * (180/12)
-
-    return angulo
+    
+    return (h-6) / 12 * 180 + (m) / 60 * (180/12)
 
 
 if __name__ == '__main__':

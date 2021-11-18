@@ -5,6 +5,7 @@ def nearest_value(values: set, one: int) -> int:
         if (abs(v-one) < distance) or ( abs(v-one) == distance and v < res):
             res = v
             distance = abs(v-one)
+            
     return res
 
 

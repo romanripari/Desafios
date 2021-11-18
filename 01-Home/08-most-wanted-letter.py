@@ -1,9 +1,5 @@
 def checkio(text: str) -> str:
     import collections
-    # letters = "".join(sorted( [l for l in list(set(text.lower())) if l.isalpha() ] ))
-    # counter = {}
-    # for l in letters:
-    #     counter[l] = len([ t for t in text.lower() if t == l])
 
     times = [n for n,count in collections.Counter(sorted(text.lower())).most_common() for i in range(count) if n.isalpha()]
 
