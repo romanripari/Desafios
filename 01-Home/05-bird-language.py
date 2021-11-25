@@ -13,20 +13,20 @@ def translate(text: str) -> str:
 
 def translate(text: str) -> str:
     res = ""
-    words = text.split(" ")
-    for w in words:
-        # Falta cambiar el for, tiene que ser en un RANGE para poder "adelantar" 3 cuando es vocal
-        for i, c in enumerate(w):
-            if c not in VOCALES:
-                res += c
-            elif i > 0 and w[i-1] not in VOCALES:
-                pass
-            elif i < len(w) - 2 and c == w[i+1] and c == w[i+2]:
-                 res += c
+    for w in text.split(" "):
+        i = 0        
+        while i < len(w):
+            if w[i] not in VOCALES:
+                res += w[i]
+                i += 1
+            elif i < len(w) - 2 and w[i] == w[i+1] and w[i] == w[i+2]:
+                 res += w[i]
+                 i += 2
+            i += 1
 
         res += " "
-    res = res[:-1]
-    return res
+
+    return res[:-1]
 
 
 if __name__ == "__main__":
